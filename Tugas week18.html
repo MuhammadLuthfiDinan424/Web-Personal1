@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>Menghitung Indeks Prestasi</title>
+    </head>
+    <body>
+        <script type="text/JavaScript">
+            <!--
+                function hitungindeks(){
+                    var quis = parseFloat(document.page.iquis.value);
+                    var tugas = parseFloat(document.page.itugas.value);
+                    var uts = parseFloat(document.page.iuts.value);
+                    var uas = parseFloat(document.page.iuas.value);
+                    var indeks = "";
+                    var ket = "";
+                    var tn = (0.10*quis)+(0.20*tugas)+(0.30*uts)+(0.40*uas);
+                
+                    if ((tn>80) && (tn<100)){
+                        indeks = "A";
+                        ket = "Lulus dengan Sangat Baik";
+                    }
+                    else if ((tn>68) && (tn<80))
+                    {
+                        indeks = "B";
+                        ket = "Lulus dengan Baik";
+                    }
+                    else if ((tn>55) && (tn<68))
+                    {
+                        indeks = "C";
+                        ket = "Lulus dengan Cukup";
+                    }
+                    else if ((tn>38) && (tn<55))
+                    {
+                        indeks = "D";
+                        ket = "Lulus dengan Kurang";
+                    }
+                    else if ((tn>0) && (tn<38))
+                    {
+                        indeks = "E";
+                        ket = "Tidak Lulus";
+                    }
+                    
+                    document.page.oindeks.value=indeks;
+                    document.page.oket.value=ket;
+                    //Gunakan untuk mengecek !!! Indeks Prestasi;
+                }
+            -->
+        </script>
+        <form name="page">
+            <table border="4" align="center" width="70%" height="35%">
+                <tr>
+                    <td width="100%" colspan="5"><h2 align="center">Menghitung Indeks Prestasi</h2></td>
+                </tr>
+                <tr>
+                    <td>
+                        Quis (10%) :<input type="text" size="5" name="iquis">
+                    </td>
+                    <td>
+                        Tugas (20%)   :<input type="text" size="5" name="itugas">
+                    </td>
+                    <td>
+                        UTS   (30%)   :<input type="text" size="5" name="iuts">
+                    </td>  
+                    <td>
+                        UAS (40%)  :<input type="text" size="5" name="iuas">
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan="5">
+                        <center>
+                            <input type="button" value="Hitung" onclick="hitungindeks()">
+                            <input type="reset" value="Ulang">
+                        </center>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%" colspan="5"><center>
+                        Indeks Prestasi :<input type="text" size="5" name="oindeks">
+                        Keterangan :<input type="text" size="25" name="oket">
+                    </center></td>  
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
+                      
